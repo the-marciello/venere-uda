@@ -4,6 +4,10 @@ for (let i = 1; i <= imageCount; i++) {
     images.push(`frame/${i}.png`);
 }
 
+setInterval(function() {
+    document.getElementById("content").innerHTML = scrollY;
+}, 1);
+
 document.getElementById("planet-frame").style.transform = `translateX(-50%)`; // Imposta la posizione iniziale
 
 window.addEventListener("scroll", () => {
@@ -14,7 +18,7 @@ window.addEventListener("scroll", () => {
     imageIndex = Math.max(0, Math.min(imageIndex, imageCount - 1));
     document.getElementById("planet-frame").src = images[imageIndex];
 
-    document.getElementById("slideNumber").textContent = `Slide: ${imageIndex + 1}`;
+    // document.getElementById("slideNumber").textContent = `Slide: ${imageIndex + 1}`;
 
     // Calcola la traslazione usando la funzione calcolaTraslazione
     const translateValue = calcolaTraslazione(imageIndex);
@@ -35,3 +39,31 @@ function calcolaTraslazione(slideIndex) {
     
     return translateValue;
 }
+
+setInterval(function() {
+    let primoDiv = document.getElementById("primo");
+    if (scrollY >= 1200 && scrollY < 1600) {
+        primoDiv.classList.add("visible");
+    } else {
+        primoDiv.classList.remove("visible");
+    }
+}, 1);
+
+setInterval(function() {
+    let secondoDiv = document.getElementById("secondo");
+    if (scrollY >= 2200 && scrollY < 2800) {
+        secondoDiv.classList.add("visible");
+    } else {
+        secondoDiv.classList.remove("visible");
+    }
+}, 1);
+
+setInterval(function() {
+    let terzoDiv = document.getElementById("terzo");
+    if (scrollY >= 3200) {
+        terzoDiv.classList.add("visible");
+    } else {
+        terzoDiv.classList.remove("visible");
+    }
+}, 1);
+

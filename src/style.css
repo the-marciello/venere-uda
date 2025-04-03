@@ -5,8 +5,15 @@ h1 {
     font-size: 5em;
     text-align: center;
     position: fixed;
+    color: whitesmoke;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
   
 body {
     margin: 0;
@@ -60,4 +67,42 @@ section.testi {
     border: 1px solid red;
     position: absolute;
     right: 0;
+}
+
+
+.scroll-div {    
+    opacity: 0; /* Inizialmente nascosti */
+    transition: opacity 1s ease-out; /* Transizione per l'opacità */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordo leggermente trasparente */
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7.5%;
+    background: rgba(255, 255, 255, 0.315); /* Sfondo semi-trasparente */
+    backdrop-filter: blur(10px); /* Effetto sfocatura dello sfondo */
+    -webkit-backdrop-filter: blur(10px); /* Per la compatibilità con Safari */
+    border-radius: 10px; /* Bordi arrotondati per un aspetto più morbido */
+    box-shadow: 0 4px 6px rgba(245, 245, 245, 0.2); /* Ombra leggera per profondità */
+    padding: 20px; /* Aggiungi un po' di spazio interno */
+    z-index: 10;;
+}
+
+.scroll-div.visible {
+    opacity: 1; /* Visibili */
+}
+
+#primo {
+    width: 30%;
+}
+
+#secondo {
+    width: 40%;
+}
+
+#terzo {
+    width: 45%;
+}
+
+canvas {
+    z-index: -5;
 }

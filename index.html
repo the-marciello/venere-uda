@@ -8,40 +8,42 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <canvas id="cnv"></canvas>
+    <style>
+        body {margin:0;}
+        canvas{position:fixed;}
+    </style>
+
+    <div id="content" style="position: fixed; left: 0%; color: whitesmoke;"></div> <!-- COUNTER DI SCROLL Y-->
+
     <div class="planet">
         <img id="planet-frame" src="./frame/1.png" alt="Scrolling Image">
     </div>
 
-    <div id="slideNumber">Slide: 1</div>
-
     <h1>VenUS</h1>
 
-    <section class="testi">
+    <div class="scroll-div" id="primo">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ea quia quasi, nesciunt ut non amet neque, beatae odit eos laborum error minima. Perspiciatis dicta error iste. Iste, nihil tempore?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ea quia quasi, nesciunt ut non amet neque, beatae odit eos laborum error minima. Perspiciatis dicta error iste. Iste, nihil tempore?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ea quia quasi, nesciunt ut non amet neque, beatae odit eos laborum error minima. Perspiciatis dicta error iste. Iste, nihil tempore?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ea quia quasi, nesciunt ut non amet neque, beatae odit eos laborum error minima. Perspiciatis dicta error iste. Iste, nihil tempore?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ea quia quasi, nesciunt ut non amet neque, beatae odit eos laborum error minima. Perspiciatis dicta error iste. Iste, nihil tempore?
+    </div>  
 
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit libero iste. Asperiores, inventore ea qui cumque quis hic ipsum architecto iure recusandae facilis ullam reprehenderit cupiditate sapiente praesentium ut?</p>
-        
-    </section>
+    <div class="scroll-div" id="secondo">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ea quia quasi, nesciunt ut non amet neque, beatae odit eos laborum error minima. Perspiciatis dicta error iste. Iste, nihil tempore?
+    </div>
+
+    <div class="scroll-div" id="terzo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minima cum tenetur soluta assumenda doloremque laudantium, similique, ex delectus molestias quasi eaque facilis sequi animi exercitationem hic esse nobis saepe.
+    </div>
+
     <script src="./src/main.js"></script>
+    <script src="./src/stars.js"></script>
 </body>
 </html>
