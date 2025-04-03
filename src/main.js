@@ -42,7 +42,7 @@ function calcolaTraslazione(slideIndex) {
 
 setInterval(function() {
     let primoDiv = document.getElementById("primo");
-    if (scrollY >= 1200 && scrollY < 1600) {
+    if (scrollY >= 800 && scrollY < 1600) {
         primoDiv.classList.add("visible");
     } else {
         primoDiv.classList.remove("visible");
@@ -51,7 +51,7 @@ setInterval(function() {
 
 setInterval(function() {
     let secondoDiv = document.getElementById("secondo");
-    if (scrollY >= 2200 && scrollY < 2800) {
+    if (scrollY >= 1800 && scrollY < 2600) {
         secondoDiv.classList.add("visible");
     } else {
         secondoDiv.classList.remove("visible");
@@ -60,7 +60,7 @@ setInterval(function() {
 
 setInterval(function() {
     let terzoDiv = document.getElementById("terzo");
-    if (scrollY >= 3200) {
+    if (scrollY >= 2800) {
         terzoDiv.classList.add("visible");
     } else {
         terzoDiv.classList.remove("visible");
