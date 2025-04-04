@@ -1,111 +1,118 @@
+@font-face {
+  font-family: 'Venusaur';
+  src: 
+       url('font/Venusaur.ttf') format('truetype'),
+       url('font/Venusaur.otf') format('opentype');
+}
+
 h1 {
-    font-family: "Style Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5em;
-    text-align: center;
-    position: fixed;
-    color: whitesmoke;
-    top: 2%;
-    margin: 0;
-    padding: 0;
+  font-family: "Venusaur", cursive; /* Usa Venusaur per h1 */
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 5em;
+  text-align: center;
+  position: fixed;
+  color: whitesmoke;
+  top: 2%;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-  
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 500vh;
-    background-color: #333;
-    position: relative;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500vh;
+  background-color: #333;
+  position: relative;
+}
 
 .planet {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    height: 75%;
-    z-index: -1;
-    transition: transform 0.3s ease-out; /* Modifica la transizione per la fluidità */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  z-index: -1;
+  transition: transform 0.3s ease-out;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
-div#slideNumber {
-    position: fixed;
-}
-
-#planet-frame    {
-    position: fixed;
-    top: 20px; /* Sposta il numero in alto */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    /*z-index: 10; /* Assicura che il numero sia sopra l'immagine */
-    color: #333; /* Cambia il colore del testo per contrasto */
+#planet-frame {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  z-index: 10;
 }
 
 section.testi {
-    width: 30%;
-    border: 1px solid red;
-    position: absolute;
-    right: 0;
+  width: 30%;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
 }
 
-
-.scroll-div {    
-    opacity: 0; /* Inizialmente nascosti */
-    transition: opacity 1s ease-out; /* Transizione per l'opacità */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordo leggermente trasparente */
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 7.5%;
-    background: rgba(255, 255, 255, 0.315); /* Sfondo semi-trasparente */
-    backdrop-filter: blur(10px); /* Effetto sfocatura dello sfondo */
-    -webkit-backdrop-filter: blur(10px); /* Per la compatibilità con Safari */
-    border-radius: 10px; /* Bordi arrotondati per un aspetto più morbido */
-    box-shadow: 0 4px 6px rgba(245, 245, 245, 0.2); /* Ombra leggera per profondità */
-    padding: 20px; /* Aggiungi un po' di spazio interno */
-    z-index: 10;;
+.scroll-div {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7.5%;
+  background: rgba(255, 255, 255, 0.315);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(245, 245, 245, 0.2);
+  padding: 20px;
+  z-index: 10;
 }
 
 .scroll-div.visible {
-    opacity: 1; /* Visibili */
+  opacity: 1;
 }
 
 #primo {
-    width: 30%;
+  width: 30%;
 }
 
 #secondo {
-    width: 40%;
+  width: 40%;
 }
 
 #terzo {
-    width: 45%;
+  width: 45%;
 }
 
 canvas {
-    z-index: -5;
+  z-index: -5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
