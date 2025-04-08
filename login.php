@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -25,6 +29,15 @@
             <button type="submit">ACCEDI</button>
         </form>
     <div>
+
+    <?php
+        if(isset($_SESSION['error'])){
+            ?>
+            <p><?= $_SESSION['error'] ?></p>
+            <?php
+            unset($_SESSION['error']);
+        }
+    ?>
         
     <script src="./src/main.js"></script>
     <script src="./src/stars.js"></script>
