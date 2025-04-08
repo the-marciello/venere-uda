@@ -26,6 +26,6 @@ function animate() {
   ctx.fill();
 
   //Using setTimeout instead of window.requestAnimationFrame for slower speed... window.requestAnimationFrame is approximately equal to setTimeout(func, 17);
-  setTimeout(animate, 100);
+  setTimeout(animate, 100 );
 }
 animate();

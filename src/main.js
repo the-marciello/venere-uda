@@ -67,3 +67,16 @@ setInterval(function() {
     }
 }, 1);
 
+function generaNumeroCasuale() {
+    // Genera un numero casuale tra 1 e 20 (inclusi).
+    const numeroCasuale = Math.floor(Math.random() * 20) + 1; //indica qua ogni quanto vuoi che esca VENUSAUR
+
+    const spanElement = document.getElementById("meme");
+
+    // if(numeroCasuale == 17) {
+        spanElement.style.display = "inline";
+    // }
+}
+
+generaNumeroCasuale(); 
+
