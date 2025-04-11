@@ -73,9 +73,9 @@ function generaNumeroCasuale() {
 
     const spanElement = document.getElementById("meme");
 
-    // if(numeroCasuale == 17) {
+    if(numeroCasuale == 17) {
         spanElement.style.display = "inline";
-    // }
+    }
 }
 
 generaNumeroCasuale(); 
