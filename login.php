@@ -1,5 +1,10 @@
 <?php
     session_start();
+
+    if(isset($_SESSION['success'])){
+        echo "<p>" . $_SESSION['success'] . " Accedi!";
+        unset($_SESSION['success']);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -15,31 +20,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>LOGIN</h1>
-    <p>Accedi per godere di tutti i servizi</p>
-    <div>
-        <form action="handler/login_handler.php" method="POST">
-            <label for="mail_user">inserire username o email</label>
-            <input type="text" name="mail_user" placeholder="..." required>
-            <br>
-            <label for="password">inserire la password</label>
-            <input type="text" name="pw" placeholder="..." required>
+    <body>
+        <h1>LOGIN</h1>
+        <p>Accedi per godere di tutti i servizi</p>
+        <div>
+            <form action="handler/login_handler.php" method="POST">
+                <label for="mail_user">inserire username o email</label>
+                <input type="text" name="mail_user" placeholder="..." required>
+                <br>
+                <label for="password">inserire la password</label>
+                <input type="text" name="pw" placeholder="..." required>
 
-            <button type="submit">ACCEDI</button>
-        </form>
-    <div>
+                <button type="submit">ACCEDI</button>
+            </form>
+        <div>
 
-    <?php
-        if(isset($_SESSION['error'])){
-            ?>
-            <p><?= $_SESSION['error'] ?></p>
-            <?php
-            unset($_SESSION['error']);
-        }
-    ?>
-        
-    <script src="./src/main.js"></script>
-    <script src="./src/stars.js"></script>
-</body>
+        <?php
+            if(isset($_SESSION['error'])){
+                ?>
+                <p><?= $_SESSION['error'] ?></p>
+                <?php
+                unset($_SESSION['error']);
+            }
+        ?>
+            
+        <script src="./src/main.js"></script>
+        <script src="./src/stars.js"></script>
+    </body>
 </html>
