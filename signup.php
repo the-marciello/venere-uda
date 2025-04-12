@@ -64,12 +64,10 @@
         </form>
     </div>
 
-    <!-- SCRIPT JS -->
     <script>
         document.getElementById("form-uno").addEventListener("submit", function(e) {
-            e.preventDefault(); // Evita che il form venga inviato
+            e.preventDefault();
 
-            // Prendi i valori
             const formUno = document.forms["form-uno"];
             const formDue = document.forms["form-due"];
 
@@ -79,7 +77,6 @@
             formDue.mail.value = formUno.mail.value;
             formDue.pw.value = formUno.pw.value;
 
-            // Passa al secondo step
             document.getElementById("form-uno").style.display = "none";
             document.getElementById("form-due").style.display = "block";
         });

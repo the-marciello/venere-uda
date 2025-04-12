@@ -4,19 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UDA Venere</title>
-    <link rel="stylesheet" href="./src/plainstyle.css">
+    <link rel="stylesheet" href="./src/plainstyle.scss">
+
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <h1>VenUS</h1>
-        <div class="button">
-            <a href="./login.php">Accedi</a>
-            <a href="./signup.php">Registrati</a>
+
+    <div class="container">
+        
+        <header>
+            <h1>VenUS</h1>
+            <div class="button">
+                <a href="./login.php">Accedi</a>
+                <a href="./signup.php">Registrati</a>
+            </div>
+        </header>
+        <div id="spacer"></div>
+        <section>
+            <div class="container-carousel">
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                    <input type="radio" name="slides" id="slide-3">
+                    <input type="radio" name="slides" id="slide-4">
+                    <input type="radio" name="slides" id="slide-5">
+                    <input type="radio" name="slides" id="slide-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1041/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Tim Marshall</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1043/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Christian Joudrey</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Steve Carter</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Rosan Harmens</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Annie Spratt</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>    
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section cards">
+
         </div>
-    </header>
+
+        <footer>
+
+        </footer>
+    </div> 
 </body>
 </html>
