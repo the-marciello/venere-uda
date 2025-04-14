@@ -75,6 +75,21 @@ header ~ * {
     flex-flow: column wrap;
 }
 
+h1 a {
+	text-decoration: none;    
+	font-family: "Ephesis", cursive;
+    font-style: normal;
+    text-align: center;
+    color: var(--primary-light);
+    top: 0%;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+
+/* CAROSELLO */
+
 @mixin aspect-ratio($width, $height) {
     position: relative;
 
@@ -269,6 +284,12 @@ section {
             object-fit: cover;
         }
     }
+}
+
+.carousel__thumbnails label.active img {
+	/* Stili per evidenziare la miniatura attiva */
+	border: 2px solid var(--accent-color);
+	box-shadow: 0 0 5px var(--accent-color);
 }
 
 /* CARDS */
