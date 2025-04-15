@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
 const imageCount = 80;
 let images = [];
 for (let i = 1; i <= imageCount; i++) {
