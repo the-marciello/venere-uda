@@ -13,19 +13,37 @@ ctx.fillRect(0, 0, W, H);
 ctx.shadowBlur = 100;
 ctx.shadowColor = "white";
 
-function animate() {
-  //Random position and size of stars;
-  let x = W * Math.random();
-  let y = H * Math.random();
-  let r = 2.5 * Math.random();
+let stars = []; // Array per memorizzare le stelle
+let maxStars = 1000; // Numero massimo di stelle
 
-  //Draw the stars;
-  ctx.beginPath();
-  ctx.fillStyle = "white";
-  ctx.arc(x, y, r, 0, Math.PI * 2);
-  ctx.fill();
+function createStar() {
+	let x = W * Math.random();
+	let y = H * Math.random();
+	let r = 2.5 * Math.random();
 
-  //Using setTimeout instead of window.requestAnimationFrame for slower speed... window.requestAnimationFrame is approximately equal to setTimeout(func, 17);
-  setTimeout(animate, 100 );
+	return { x: x, y: y, r: r };
 }
+
+function drawStar(star) {
+	ctx.beginPath();
+	ctx.fillStyle = "white";
+	ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+	ctx.fill();
+}
+
+function animate() {
+	if (stars.length < maxStars) {
+		let newStar = createStar();
+		stars.push(newStar);
+	} 
+
+	ctx.clearRect(0, 0, W, H); // Clear canvas before redrawing
+	ctx.fillStyle = "#112";
+	ctx.fillRect(0, 0, W, H);
+
+	stars.forEach(drawStar);
+
+	setTimeout(animate, 100);
+}
+
 animate();
