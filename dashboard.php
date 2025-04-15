@@ -79,67 +79,6 @@
 
         </footer>
 
-        <style>
-            body {
-    margin: 0;
-    overflow-x: visible;
-  }
-  
-  .container {
-    max-width: 100vw;
-    overflow-x: visible;
-  }
-  
-  /* Wrapper per le card con scrolling orizzontale */
-  .cards-wrapper {
-    margin-top: 1rem;
-    max-width: 100%;
-    overflow-x: auto;
-    padding: 1rem;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    width: max-content;
-    margin: 0;
-  }
-
-  .card {
-    flex-shrink: 0;
-    background: #e0e0e0;
-    border-radius: 30px;
-    padding: 1.5rem;
-    width: 360px;
-    max-width: 90vw;
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
-  }
-
-  .card-image {
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-
-  .card-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  
-  .card-title {
-    color: #bf2a57;
-    font-size: 1.4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-        </style>
 
         <script src="./src/carosello.js"></script>
     </div> 
