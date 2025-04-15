@@ -29,7 +29,7 @@
                 <input type="text" name="mail_user" placeholder="..." required>
                 <br>
                 <label for="password">inserire la password</label>
-                <input type="text" name="pw" placeholder="..." required>
+                <input type="password" name="pw" placeholder="..." required>
 
                 <button type="submit">ACCEDI</button>
             </form>

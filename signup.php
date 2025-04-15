@@ -18,7 +18,7 @@
 
     <div>
         <!-- FORM UNO -->
-        <form id="form-uno" method="POST">
+        <form id="form-uno">
             <label for="username">Scegliere un proprio username</label>
             <input type="text" placeholder="..." name="username" required>
 
@@ -39,7 +39,7 @@
             <?php
                 require "./handler/conn.php";
 
-                $query = "SELECT * FROM CATEGORIADINTERESSE";
+                $query = "SELECT * FROM CATEGORIAINTERESSE";
                 $result = $conn->query($query);
 
                 if ($result === FALSE) {
@@ -47,8 +47,8 @@
                 } else {
                     while ($row = $result->fetch_assoc()):
             ?>
-                <input type="checkbox" name="categorie[]" value="<?= $row['NOME'] ?>">
-                <label><?= $row['NOME'] ?></label><br><br>
+                <input type="checkbox" name="categorie[]" value="<?= $row['Nome'] ?>">
+                <label><?= $row['Nome'] ?></label><br><br>
             <?php
                     endwhile;
                 }
